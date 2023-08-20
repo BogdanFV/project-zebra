@@ -47,7 +47,7 @@ export default {
     async fetchNews() {
       try {
         const response = await fetch(
-          `http://flems.github.io/test/api/news/${this.currentPage}/`
+          `https://flems.github.io/test/api/news/${this.currentPage}/`
         );
         const data = await response.json();
         this.newsList = this.newsList.concat(data.items);
